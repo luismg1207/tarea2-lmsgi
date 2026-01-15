@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="tradiciones.html">Tradiciones</a>
+        <a href="datos_estadisticos.html">Estadísticas</a>
+        <a href="informacion_turistica.html">Turismo</a>
+        <a href="contenido_multimedia.html">Multimedia</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="get">
+            
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto">
+                    <option value="info">Pedir Información</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferencia de contacto:</label>
+                <input type="radio" name="pref" value="email" checked> Email
+                <input type="radio" name="pref" value="tlf"> Teléfono
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" name="acepto" id="acepto">
+                <label for="acepto" style="display:inline">Acepto la política de privacidad</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+</body>
+</html>
